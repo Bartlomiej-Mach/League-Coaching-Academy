@@ -1,0 +1,93 @@
+.questions-section {
+    width: 100%;
+    padding-left: 15%;
+    .questions-section__content-container {
+        width: 80%;
+        border-top: 1px solid $color5;
+        border-bottom: 1px solid $color5;
+        padding: 40px 0 20px 20px;
+        margin-bottom: 50px;
+        .question-heading {
+            font-family: $font2;
+            font-size: 50px;
+            color: $color1;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        .question-list {
+            width: 100%;
+            .question-list--item {
+                margin-bottom: 20px;
+                .button-question-wrapper {
+                    @include center-left();
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                    .question-button {
+                        width: 30px;
+                        height: 30px;
+                        min-width: 30px;
+                        margin-right: 10px;
+                        background: transparent;
+                        @include center();
+                        border: none;
+                        position: relative;
+                        .line {
+                            width: 2px;
+                            height: 50%;
+                            background: $color1;
+                            position: absolute;
+                            transition: .2s;
+                        }
+                        .line-1 {
+                            transform: rotate(-45deg);
+                            right: 9px;
+                        }
+                        .line-2 {
+                            transform: rotate(45deg);
+                            left: 9px;
+                        }
+                    }
+                }
+                .answer-wrapper {
+                    padding-left: 40px;
+                    height: 0px;
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                }
+                .answer--active {
+                    height: 100%;
+                }
+                .button--active {
+                    .question-button {
+                        .line-1 {
+                            transform: rotate(45deg);
+                            right: 9px;
+                        }
+                        .line-2 {
+                            transform: rotate(-45deg);
+                            left: 9px;
+                        }
+                    }
+                }
+            }
+            .question--active {
+                .answer-wrapper {
+                    height: 100%;
+                }
+                .button-question-wrapper {
+                    .question-button {
+                        .line-1 {
+                            transform: rotate(45deg);
+                            right: 9px;
+                        }
+                        .line-2 {
+                            transform: rotate(-45deg);
+                            left: 9px;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.footer-section {
+    @include center-column();
+    width: 100%;
+    background: $color1;
+    z-index: 11;
+    position: relative;
+    padding-bottom: 20px;
+    &__arrow-container {
+        transform: rotate(180deg);
+    }
+    &__social-wrapper {
+        @include center();
+        margin: 20px 0;
+        .fab {
+            width: 35px;
+            height: 35px;
+            background: $color2;
+            border-radius: 50%;
+            color: $color1;
+            @include center();
+            margin: 10px;
+            font-size: 15px;
+            transition: .2s;
+
+            &:hover {
+                color: $color2;
+                background: $color3;
+            }
+        }
+    }
+    &__copyrights {
+        text-align: center;
+        font-size: 10px;
+        font-family: $font1;
+        .author-link {
+            color: $color3;
+            transition: .2s;
+            &:hover {
+                color: rgb(153, 137, 44);
+            }   
+        }
+        
+    }
+}

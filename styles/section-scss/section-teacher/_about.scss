@@ -1,0 +1,70 @@
+.about-teacher-section {
+    width: 100%;
+    @include center-column();
+    max-width: 1440px;
+    &__floor-container {
+        width: 65%;
+        @include center-left();
+        margin-bottom: 60px;
+        &:first-child {
+            border-top: 1px solid $color1;
+            padding-top: 40px;
+        }
+        .division-wrapper {
+            @include center-left-column();
+            color: $color1;
+            margin-right: 130px;
+            .division-heading {
+                font-family: $font2;
+                font-size: 50px;
+            }
+            .divison-subheading {
+                margin: 10px 0 10px 0;
+            }
+            .divison-region {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: normal;
+                color: $color5;
+            }
+        }
+        .role-wrapper {
+            @include center-left-column();
+            color: $color1;
+            .role-heading {
+                font-family: $font2;
+                font-size: 50px;
+            }
+            .role-subheading {
+                margin: 10px 0 10px 0;
+            }
+            .role-basic {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: normal;
+                color: $color5;
+            }
+        }
+        .about-wrapper {
+            width: 645px;
+            @include center-left-column();
+            .about-heading {
+                color: $color1;
+                font-family: $font2;
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+        }
+        .coaching-wrapper {
+            width: 645px;
+            @include center-left-column();
+            .coaching-heading {
+                color: $color1;
+                font-family: $font2;
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}

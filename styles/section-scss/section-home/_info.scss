@@ -1,0 +1,50 @@
+.info-section {
+    width: 100%;
+    @include center();
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+    &__arrow-container {
+        @include center-column();
+        position: absolute;
+    }
+    &__decoration-text-container {
+        position: absolute;
+    }
+    &__content-container {
+        margin: 180px 0 100px 0;
+        width: 100%;
+        z-index: 1;
+        padding-left: 15%;
+        .text-wrapper {
+            .info-heading {
+                color: $color3;
+            }
+            position: relative;
+            .info-paragraph {
+                margin-top: 20px;
+                width: 330px;
+                position: relative;
+                &::before {
+                    content: '';
+                    background: $color3;
+                    width: 130px;
+                    height: 3px;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 0;
+                }
+            }
+        }
+        .img-wrapper {
+            overflow: hidden;
+            position: absolute;
+            bottom: 70px;
+            right: -5%;
+            width: 65%;
+            .info-img {
+                width: 100%;
+            }
+        }
+    }
+}

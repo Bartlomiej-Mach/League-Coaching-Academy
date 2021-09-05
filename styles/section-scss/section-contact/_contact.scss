@@ -1,0 +1,15 @@
+.contact-link {
+    color: $color3;
+}
+
+.header-section {
+    width: 100%;
+    @include center-column();
+    position: relative;
+    
+    &__content-container {
+        @include center-column();
+        position: absolute;
+    }
+    
+}

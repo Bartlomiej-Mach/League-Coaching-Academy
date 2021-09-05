@@ -1,0 +1,126 @@
+.info-section {
+    width: 100%;
+    @include center();
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+    &__arrow-container {
+        @include center-column();
+        position: absolute;
+    }
+    &__decoration-text-container {
+        position: absolute;
+    }
+    &__content-container {
+        margin: 180px 0 100px 0;
+        width: 100%;
+        z-index: 1;
+        padding: 0 10% 0 15%;
+        @include center-space();
+        .text-wrapper {
+            .info-heading {
+                color: $color3;
+            }
+            position: relative;
+            .info-subheading {
+                margin: 10px 0 20px 0;
+            }
+            .info-paragraph {
+                margin-top: 20px;
+                width: 330px;
+                position: relative;
+                &::before {
+                    content: '';
+                    background: $color3;
+                    width: 130px;
+                    height: 3px;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 0;
+                }
+            }
+        }
+        .social-media-wrapper {
+            width: 530px;
+            background: $color1;
+            .social-media-container {
+                width: 100%;
+                position: relative;
+                @include center-left-column();
+                padding: 80px 0 80px 0;
+                .wrapper-name {
+                    position: absolute;
+                    left: -80px;
+                    transform: rotate(-90deg);
+                    font-family: $font2;
+                    font-size: 50px;
+                    color: $color2;
+                    display: inline-block;
+                }
+                .social-media-list {
+                    width: 100%;
+                    padding-left: 100px;
+                    .social-item {
+                        font-family: $font1;
+                        color: $color2;
+                        font-weight: bold;
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .social-link {
+                            color: $color2;
+                            font-size: 20px;
+                            @include center-left();
+                            transition: .2s;
+                            .fab {
+                                font-size: 30px;
+                                margin-right: 20px;
+                                width: 30px;
+                                height: 30px;
+                                transform: translateY(-3px);
+                            }
+                            &:hover {
+                                color: $color3;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-container {
+                width: 100%;
+                @include center-left-column();
+                padding: 20px 0 30px 40px;
+                background: $color3;
+                .wrapper-name-2 {
+                    font-family: $font2;
+                    font-size: 50px;
+                    color: $color1;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
+                .social-item {
+                    font-weight: bold;
+                    .social-link {
+                        color: $color1;
+                        font-size: 20px;
+                        @include center-left();
+                        transition: .2s;   
+
+                        .fas {
+                            font-size: 30px;
+                            margin-right: 20px;
+                            width: 30px;
+                            height: 30px;
+                            transform: translateY(-3px);
+                        }
+
+                        &:hover {
+                            color: $color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

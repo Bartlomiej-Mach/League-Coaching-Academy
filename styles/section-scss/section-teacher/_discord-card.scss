@@ -1,0 +1,86 @@
+.continue-with-discord {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba($color: $color2, $alpha: .8);
+    z-index: 100;
+    @include center();
+    display: none;
+    &__content-container {
+        width: 590px;
+        height: 290px;
+        background: #7289DA;
+        @include center-left-column();
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+        .discord-card-text-wrapper {
+            position: absolute;
+            right: 50px;
+            .discord-card-heading {
+                font-family: $font2;
+                font-size: 50px;
+                color: $color1;
+            }
+            .discord-card-paragraph {
+                color: $color2;
+                margin: 10px 0 25px 0;
+            }
+            .discord-card-server-link {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: medium;
+                color: $color1;
+                transition: .2s;
+                &:hover {
+                    color: $color3;
+                }
+            }
+        }
+        .close-button {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: transparent;
+            border: none;
+            @include center();
+            cursor: pointer;
+            .button-line {
+                width: 80%;
+                height: 2px;
+                background: $color1;
+                position: absolute;
+                transition: .2s;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+            &:hover .button-line:first-child {
+                transform: rotate(25deg);
+            }
+            &:hover .button-line:last-child {
+                transform: rotate(-25deg);
+            }
+
+        }
+        .discord-icon {
+            position: absolute;
+            width: 200px;
+            transform: rotate(17deg);
+            bottom: -2%;
+            left: -5%;
+            
+        }
+    }
+}
+
+.continue-with-discord--active {
+    display: flex;
+}

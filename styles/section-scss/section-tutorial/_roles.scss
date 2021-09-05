@@ -1,0 +1,97 @@
+.role-section {
+    width: 100%;
+    &__content-container {
+        border-top: 1px solid $color1;
+        @include center-column();
+        margin: 0 0 100px 0;
+        position: relative;
+        z-index: 11;
+        .roles-floor {
+            width: 100%;
+            @include center();
+            margin: 50px 0 0 0;
+            .jungle-lane {
+                clip-path: polygon(93% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+            }
+            .role-wrapper {
+                width: 485px;
+                height: 260px;
+                margin: 0 10px;
+                background: $color1;
+                position: relative;
+                @include center();
+                overflow: hidden;
+                &::before {
+                    width: 120%;
+                    height: 100%;
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    background: $color2;
+                    opacity: 0.4;
+                    z-index: 1;
+                    transition: .2s;
+                    clip-path: polygon(0 0, 100% 0%, 84% 100%, 0 100%);
+                    transform: translateX(-105%);
+                }
+                .number-name-wrapper {
+                    margin: 0 0 0 20px;
+                    font-family: $font2;
+                    font-size: 70px;
+                    width: 145px;
+                    height: 80px;
+                    overflow: hidden;
+                    color: $color2;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    .number-role,
+                    .name-role {
+                        transition: .2s;
+                        position: relative;
+                    }
+                    .name-role {
+                        color: $color3;
+                    }
+                }
+                &:hover::before {
+                    transform: translateX(0);
+                }
+                &:hover .number-role {
+                    transform: translateY(-105%);
+                }
+                &:hover .name-role {
+                    transform: translateY(-105%);
+                }
+                &:hover .role-text-wrapper {
+                    transform: translateY(0);
+                }
+                .role-text-wrapper {
+                    transform: translateY(140%);
+                    margin-top: 40px;
+                    position: relative;
+                    z-index: 1;
+                    width: 310px;
+                    transition: .2s;
+                    transition-delay: 0.1s;
+                    .role-heading {
+                        margin-bottom: 15px;
+                    }
+                    .role-paragraph {
+                        color: $color1;
+                    }
+                }
+                .role-img-wrapper {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    .role-img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }   
+}

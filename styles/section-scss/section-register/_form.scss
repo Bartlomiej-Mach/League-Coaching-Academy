@@ -1,0 +1,177 @@
+.line {
+    height: 2650px;
+}
+
+.info-section {
+    width: 100%;
+    @include center();
+    position: relative;
+    max-width: 1440px;
+    &__arrow-container {
+        @include center-column();
+        position: absolute;
+    }
+    &__decoration-text-container {
+        position: absolute;
+    }
+    &__content-container {
+        margin: 200px 0 100px 0;
+        width: 100%;
+        z-index: 1;
+        padding: 0 5% 0 15%;
+        @include center-top-left-space();
+        overflow: hidden;
+        .text-wrapper {
+            .info-heading {
+                color: $color3;
+                .color-change {
+                    color: $color1;
+                }
+            }
+            .info-subheading {
+                margin: 25px 0 40px 0;
+            }
+            position: relative;
+            .info-paragraph {
+                margin-top: 20px;
+                width: 330px;
+                position: relative;
+            }
+            .question-text {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: normal;
+                color: $color5;
+                margin-top: 40px;
+                display: inline-block;
+            }
+            .contact-button {
+                font-size: 20px;
+                color: $color3;
+                font-weight: bold;
+            }
+            .contact-button-second {
+                margin: 40px 0 20px 0;
+                
+            }
+        }
+        
+        .form-wrapper {
+            margin-top: 100px;
+            width: 615px;
+            min-width: 615px;
+            max-width: 615px;
+            @include center();
+            background: $color1;
+            padding: 30px 0;
+            position: relative;
+            &::before {
+                width: 80%;
+                height: 90%;
+                content: '';
+                border-left: 1px solid $color5;
+                border-bottom: 1px solid $color5;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+            }
+            .contact-form {
+                @include center-column();
+                width: 90%;
+
+                
+                .form-item-wrapper {
+                    margin-bottom: 30px;
+                    width: 100%;
+                    // @include center-left-column();
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .warning-text {
+                        color: $color3;
+                        margin-bottom: 15px;
+                    }
+                    .form-heading {
+                        font-family: $font2;
+                        font-size: 50px;
+                    }
+                    .form-input-item {
+                        
+                        width: 100%;
+                        height: 50px;
+                        border: none;
+                        border-bottom: 1px solid $color2;
+                        background: #CDCDCD;
+                        font-family: $font1;
+                        padding: 10px;
+                        font-size: 20px;
+                        overflow: hidden;
+                    }
+                    .form-textarea {
+                        min-width: 100%;
+                        max-width: 553.5px;
+                        min-height: 300px;
+                    }                   
+                }
+
+                .form-discord-age-wrapper {
+                    @include center-space();
+                    .input-wrapper{
+                        @include center-left-column();
+                        &:last-child {
+                            width: 25%;
+                        }
+                        .form-input-discord {
+                            width: 130%;
+                        }
+                        .form-input-age {
+                            width: 100%;
+                        }
+                    }
+                }
+                .form-team-division-wrapper {
+                    @include center-space();
+                    .input-wrapper{
+                        @include center-left-column();
+                        &:last-child {
+                            width: 50%;
+                        }
+                        .form-input-team-coach {
+                            width: 90%;
+                        }
+                        .form-input-division {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .form-button {
+                    border: none;
+                    background: none;
+                    color: $color1;
+                    margin: 70px 0 40px 0;
+                    cursor: pointer;
+                    &::before {
+                        border: solid 1px $color2;
+                        border-bottom: none;
+                    }
+                    &::after {
+                        border: solid 1px $color2;
+                        border-top: none;
+                    }
+                } 
+                
+            }
+        }
+    }
+    &__img-wrapper {
+        
+        position: absolute;
+        left: -15%;
+        bottom: 0;
+        z-index: 10;
+        .zed-img {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA | Strona główna</title>
+
+    <!-- fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Spartan:wght@400;500;700&family=Staatliches&family=Teko:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css instal -->
+    <link rel="stylesheet" href="../styles/app-scss/app.css">
+    <link rel="stylesheet" href="../styles/section-css/section-home/home.css">
+
+    <!-- slider library -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <nav class="navigation-section">
+        <div class="navigation-section__logo-container">
+            <div class="logo-wrapper">
+                <img src="../" alt="logo">
+            </div>
+        </div>
+        <div class="navigation-section__nav-list-container">
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <a href="#" class="list-link home-link">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="./tutorial.html" class="list-link tutorial-link">Poradniki</a>
+                </li>
+                <li class="list-item">
+                    <a href="./teachers/teacher01.html" class="list-link teacher-link">Mentorzy</a>
+                </li>
+                <li class="list-item">
+                    <a href="./register.html" class="list-link register-link">Rejestracja</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link contact-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="line-section">
+        <div class="line"></div>
+    </section>
+
+    <header id="home" class="header-section">
+        <div class="header-section__movie-container movie-wrapper">
+            <video class="video-main--item" playsinline autoplay muted loop>
+                <source src="../assets/movies/home-short.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Twoja przeglądarka nie obsługuje filmów.
+            </video>
+        </div>
+        <div class="header-section__content-container">
+            <span class="subheading-header subheading-main">
+                Grupa doświadczonych coachów
+            </span>
+            <h1 class="heading-header heading-main">
+                LOL COACHING ACADEMY
+            </h1>
+            <a href="#info-text" class="continue-button-header continue-button-main">
+                zacznij teraz
+                <span class="btn-bg"></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="info-section">
+        <a href="#info-text" class="info-section__arrow-container arrow-container-main">
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+        </a>
+
+        <div id="info-text" class="info-section__decoration-text-container decoration-text-container-main">
+            <span class="decoration-text-main">
+                WE ARE
+            </span>
+            <br>
+            <span class="decoration-text-main">
+                PLAYERS
+            </span>
+        </div>
+
+        <div class="info-section__content-container">
+            <div class="text-wrapper">
+                <h2 class="info-heading">
+                    kilka słów <br> o akademii
+                </h2>
+                <p class="info-paragraph">
+                    Lol Coaching Academy zostało stworzone z
+                     myślą o działaniu graczy dla graczy. 
+                     Budując naszą grupę na facebook’u zaczęły
+                      przybywać osoby chętne nieść pomoc swoim
+                       słabszym oraz mniej doświadczonym kolegom.
+                        W taki oto sposób zrodziła się idea stworzenia
+                         strony, która ułatwi komunikację między
+                          zapaleńcami Ligi Legend!
+                </p>
+            </div>
+            <div class="img-wrapper">
+                <img class="info-img" src="../assets/imgs/home-img/ahri.png" alt="ahri-img">
+            </div>
+        </div>
+
+
+    </main>
+
+    <section class="tutorial-section">
+        <div class="tutorial-section__content-container">
+            <h2 class="tutorial-heading">
+                profesjonalne <br> Poradniki
+            </h2>
+            <div class="tutorial-content-wrapper">
+                <div class="tutorial-text-wrapper">
+                    <h3 class="tutorial-subheading">
+                        TUTAJ DOWIESZ <br> SIĘ NAJWIĘCEJ
+                    </h3>
+                    <p class="tutorial-paragraph">
+                        W zakładce poradniki znajdziesz wszystko
+                         czego szukasz od analiz poszczególnych
+                          championów przez rozmieszczanie wizji 
+                          aż po kluczowy w rozgrywce wave management.
+                    </p>
+                    <a href="./tutorial.html" class="tutorial-button">
+                        Więcej poradników
+                    </a>
+                </div>
+                <div class="tutorial-video-wrapper">
+                    <video class="video-tutorial" controls>
+                        <source src="../assets/movies/home-short.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Twoja przeglądarka nie obsługuje filmów.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teacher-section">
+        <div class="teacher-section__all-content-container">
+
+            <div class="teacher-container-item__slider-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <a href="./teachers/teacher01.html" class="swiper-slide">
+                            <span class="teacher-name">
+                                Mateo Zet
+                            </span>
+                      </a>
+                      <a href="./teachers/teacher02.html" class="swiper-slide">
+                            <span class="teacher-name">
+                                Paweł Belina
+                            </span>
+                      </a>
+                      <a href="./teachers/teacher03.html" class="swiper-slide">
+                            <span class="teacher-name">
+                                Adrian Pacyna
+                            </span>
+                      </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+            <div class="teacher-container-item__content-container">
+                <h2 class="teacher-heading">
+                    <span class="color-change">w</span>ybierz 
+                    <br>
+                    <span class="color-change">s</span>wojego
+                    <br>
+                    <span class="color-change">m</span>entora
+                </h2>
+    
+                <h3 class="teacher-subheading">
+                    CZEKAMY WŁASNIE <br> NA CIEBIE
+                </h3>
+                <p class="teacher-paragraph">
+                    Oto i nasi trenerzy, którzy 
+                    są w stanie zaoferować właśnie
+                     Tobie swój własny czas byś Ty 
+                     mógł dalej rozwijać swoje
+                      umiejętności!
+                </p>
+    
+                <a href="./teachers/teacher01.html" class="continue-button-header continue-button-main">
+                    WSZYSCY MENTORZY
+                    <span class="btn-bg"></span>
+                </a>
+    
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+
+        <div class="contact-section__decoration-text-container decoration-text-container-main decoration-text-container-main2">
+            <span class="decoration-text-main">
+                YOUR RANK
+            </span>
+        </div>
+
+        <div class="contact-section__content-wrapper">
+            <h2 class="contact-heading">
+                twój <br>
+                ruch
+            </h2>
+            <h3 class="contact-subheading">
+                JAKIEŚ PYTANIE? <br> NAPISZ DO NAS
+            </h3>
+            <p class="contact-paragraph">
+                Chcesz wbić lepszą rangę? A może chcesz zostać coachem? Zawsze jesteśmy dostępni i otwarci na naszą społeczność. Nie zwlekaj napisz do nas!
+            </p>
+
+            <a href="#" class="continue-button-contact continue-button-main">
+                skontaktuj się
+                <span class="btn-bg"></span>
+            </a>
+        </div>
+
+        <div class="contact-section__img-wrapper">
+            <img class="contact-img" src="../assets/imgs/home-img/akali.png" alt="akali">
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+        <a href="#home" class="footer-section__arrow-container arrow-container-main">
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+        </a>
+        <a href="./home.html" class="footer-section__logo-wrapper">
+            <img src="../" alt="logo">
+        </a>
+
+        <div class="footer-section__social-wrapper">
+            <a href="https://www.facebook.com/groups/2090073284610773" rel="noreferrer" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" rel="noreferrer" class="social-link">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="#" target="_blank" rel="noreferrer" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+            
+        </div>
+
+        <div class="footer-section__copyrights">
+            &copy; 2021 Lol Coaching Academy | stworzone przez 
+            <a target="_blank" rel="noreferrer" href="http://machon.handysoft.pl/" class="author-link">
+                Maszon Studio
+            </a>  
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="https://kit.fontawesome.com/786fc2d0ee.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- index js file -->
+    <script src="../js/home-page/slider.js"></script>
+    <script src="../js/nav/nav-animation.js"></script>
+    <script src="../js/animation-main/animation-main.js"></script>
+    <script src="../js/home-page/animation-home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+.teacher-link {
+    color: $color3;
+}
+.line {
+    height: 3400px;
+}
+
+.header-section {
+    width: 100%;
+    @include center-column();
+    position: relative;
+    max-height: 715px;
+    height: 715px;
+    &__slider-name-container {
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        @include center();
+        opacity: 0;
+        .swiper {
+            width: 100%;
+            max-width: 990px;
+            overflow: hidden;
+            .swiper-wrapper {
+                width: 100%;
+                display: flex;
+                
+                .teacher-slide {
+                    color: $color1;
+                    height: 60px;
+                    @include center();
+                    opacity: 0.8;
+                    transition: .2s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    .teacher-number {
+                        font-family: $font1;
+                        font-size: 20px;
+                        margin-right: 10px;
+                        transform: translateY(4px);
+                    }
+                    .teacher-name {
+                        font-family: $font2;
+                        font-size: 40px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+    }
+    &__teacher-img-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-position: center;
+        background-position-y: -100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $color2;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;            
+        }
+    }
+    &__content-container {
+        margin-top: 80px;
+        @include center-column();
+        position: absolute;
+    }
+    
+}
+
+
+.teacher-slide--active {
+    opacity: 1 !important;
+}
+
+.teacher-01-img {
+    background-image: url('../../../assets/imgs/teacher-img/jhin.jpg');
+}
+.teacher-02-img {
+    background-image: url('../../../assets/imgs/teacher-img/ashe-project.jpg');
+}
+.teacher-03-img {
+    background-image: url('../../../assets/imgs/teacher-img/karma.jpg');
+}
+.teacher-04-img {
+    background-image: url('../../../assets/imgs/teacher-img/ahri.jpg');
+}
+.teacher-05-img {
+    background-image: url('../../../assets/imgs/teacher-img/irelia.jpg');
+}
+.teacher-06-img {
+    background-image: url('../../../assets/imgs/teacher-img/lux.jpg');
+}
+.teacher-07-img {
+    background-image: url('../../../assets/imgs/teacher-img/sivir.jpg');
+}
+.teacher-08-img {
+    background-image: url('../../../assets/imgs/teacher-img/sona.jpg');
+}
+.teacher-09-img {
+    background-image: url('../../../assets/imgs/teacher-img/akali.jpg');
+}
+.teacher-10-img {
+    background-image: url('../../../assets/imgs/teacher-img/jinx.jpg');
+}
+.teacher-11-img {
+    background-image: url('../../../assets/imgs/teacher-img/miss.jpg');
+}

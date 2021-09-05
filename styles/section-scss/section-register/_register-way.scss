@@ -1,0 +1,134 @@
+.line {
+    height: 2350px;
+}
+
+.info-section {
+    width: 100%;
+    @include center();
+    position: relative;
+    max-width: 1440px;
+    &__arrow-container {
+        @include center-column();
+        position: absolute;
+    }
+    &__decoration-text-container {
+        position: absolute;
+    }
+    &__content-container {
+        margin: 200px 0 100px 0;
+        width: 100%;
+        z-index: 1;
+        padding: 0 15% 0 15%;
+        @include center-top-left-space();
+        overflow: hidden;
+        .text-wrapper {
+            .info-heading {
+                color: $color3;
+                .color-change {
+                    color: $color1;
+                }
+            }
+            .info-subheading {
+                margin: 25px 0 40px 0;
+            }
+            position: relative;
+            .info-paragraph {
+                margin-top: 20px;
+                width: 330px;
+                position: relative;
+            }
+            .question-text {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: normal;
+                color: $color5;
+                margin-top: 40px;
+                display: inline-block;
+            }
+            .contact-button {
+                font-size: 20px;
+                color: $color3;
+                font-weight: bold;
+            }
+            .contact-button-second {
+                margin: 40px 0 20px 0;
+                
+            }
+        }
+        .class-choice-wrapper{
+            margin-top: 100px;
+            width: 500px;
+            min-width: 500px;
+            @include center-column();
+            position: relative;
+            .choice-class-box {
+                width: 100%;
+                height: 500px;
+                @include center();
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 180%;
+                transition: .2s;
+                background-color: rgba($color: $color2, $alpha: 0.3);
+                background-blend-mode: multiply;
+                position: relative;
+                &::before,
+                &::after {
+                    content: '';
+                    width: 60%;
+                    height: 60%;
+                    border: 2px solid $color3;
+                    position: absolute;
+                    opacity: 0;
+                    transition: .2s;
+                }
+                &::after {
+                    animation: rotate-45-360 60s linear infinite;
+                    transform: rotate(45deg);
+                }
+                &::before {
+                    animation: rotate-0-360 60s linear infinite;
+                }
+                &:hover::after {
+                    opacity: 1;
+                }
+                &:hover::before {
+                    opacity: 1;
+                }
+
+
+                &:first-child {
+                    background-image: url('../../../assets/imgs/register-img/ryze.jpg');
+                }
+                &:last-child {
+                    background-image: url('../../../assets/imgs/register-img/yasuo.jpg');
+                }
+                &:hover {
+                    background-size: 210%;
+                }
+                .class-name {
+                    font-family: $font2;
+                    color: $color1;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes rotate-0-360 {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-45-360 {
+    from {
+        transform: rotate(45deg);
+    } to {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,114 @@
+.more-teachers-section {
+    width: 100%;
+    @include center();
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+    padding: 50px 0;
+    &__content-container {
+        width: 65%;
+        position: relative;
+        .more-teachers-heading {
+            color: $color1;
+        }
+        .more-teachers-subheading {
+            margin: 20px 0 40px 0;
+        }
+        .more-teachers-paragraph {
+            margin: 0 0 40px 0;
+            width: 250px;
+        }
+        .discord-open {
+            cursor: pointer;
+        }
+        .more-teachers-img-wrapper {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include center();
+            .teacher-img-container {
+                width: 180px;
+                height: 120px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+                margin: 0 10px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 120%;
+                    height: 100%;
+                    background: $color2;
+                    opacity: 0.4;
+                    clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
+                    transition: .2s;
+                    transform: translateX(-105%);
+                }
+                .more-teacher-number {
+                    font-family: $font2;
+                    font-size: 25px;
+                    color: $color1;
+                    display: inline-block;
+                    margin: 3px 10px;
+                    position: relative;
+                }
+                .more-teacher-name {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 0;
+                    font-family: $font2;
+                    font-size: 18px;
+                    color: $color1;
+                    text-transform: uppercase;
+                    transform: translateY(105%);
+                    transition: .2s;
+                }
+                &:hover::before {
+                    transform: translateX(0);
+                }
+                &:hover .more-teacher-name {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+.teacher-01-more {
+    background-image: url('../../../assets/imgs/teacher-img/jhin.jpg');
+}
+.teacher-02-more {
+    background-image: url('../../../assets/imgs/teacher-img/ashe-project.jpg');
+}
+.teacher-03-more {
+    background-image: url('../../../assets/imgs/teacher-img/karma.jpg');
+}
+.teacher-04-more {
+    background-image: url('../../../assets/imgs/teacher-img/ahri.jpg');
+}
+.teacher-05-more {
+    background-image: url('../../../assets/imgs/teacher-img/irelia.jpg');
+}
+.teacher-06-more {
+    background-image: url('../../../assets/imgs/teacher-img/lux.jpg');
+}
+.teacher-07-more {
+    background-image: url('../../../assets/imgs/teacher-img/sivir.jpg');
+}
+.teacher-08-more {
+    background-image: url('../../../assets/imgs/teacher-img/sona.jpg');
+}
+.teacher-09-more {
+    background-image: url('../../../assets/imgs/teacher-img/akali.jpg');
+}
+.teacher-10-more {
+    background-image: url('../../../assets/imgs/teacher-img/jinx.jpg');
+}
+.teacher-11-more {
+    background-image: url('../../../assets/imgs/teacher-img/miss.jpg');
+}

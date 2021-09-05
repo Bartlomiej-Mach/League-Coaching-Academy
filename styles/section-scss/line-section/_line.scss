@@ -1,0 +1,15 @@
+.line-section {
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    top: 0;
+    .line {
+        position: absolute;
+        z-index: 10;
+        left: 14%;
+        width: 1px;
+        top: 0;
+        background: $color1;
+
+    }
+}

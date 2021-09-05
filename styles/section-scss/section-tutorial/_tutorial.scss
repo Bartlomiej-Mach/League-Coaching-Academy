@@ -1,0 +1,22 @@
+.home-link {
+    color: $color1;
+}
+.tutorial-link {
+    color: $color3;
+}
+
+.line {
+    height: 2500px;
+}
+
+.header-section {
+    width: 100%;
+    @include center-column();
+    position: relative;
+    
+    &__content-container {
+        @include center-column();
+        position: absolute;
+    }
+    
+}

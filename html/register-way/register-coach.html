@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCA | Rejestracja na coacha</title>
+
+
+    <!-- fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Spartan:wght@400;500;700&family=Staatliches&family=Teko:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css instal -->
+    <link rel="stylesheet" href="../../styles/app-scss/app.css">
+    <link rel="stylesheet" href="../../styles/section-css/section-register/register.css">
+
+</head>
+<body>
+    
+    <nav class="navigation-section">
+        <div class="navigation-section__logo-container">
+            <div class="logo-wrapper">
+                <img src="../" alt="logo">
+            </div>
+        </div>
+        <div class="navigation-section__nav-list-container">
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <a href="../home.html" class="list-link home-link">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="../tutorial.html" class="list-link tutorial-link">Poradniki</a>
+                </li>
+                <li class="list-item">
+                    <a href="../teachers/teacher01.html" class="list-link teacher-link">Mentorzy</a>
+                </li>
+                <li class="list-item">
+                    <a href="../register.html" class="list-link register-link">Rejestracja</a>
+                </li>
+                <li class="list-item">
+                    <a href="../contact.html" class="list-link contact-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="line-section">
+        <div class="line"></div>
+    </section>
+
+    <header id="home" class="header-section">
+        <div class="header-section__movie-container movie-wrapper">
+            <video class="video-main--item" playsinline autoplay muted loop>
+                <source src="../../assets/movies/register-coach-short.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Twoja przeglądarka nie obsługuje filmów.
+            </video>
+        </div>
+        <div class="header-section__content-container">
+            <span class="subheading-header subheading-main">
+                Dziś możesz zostać częścia naszej ekipy 
+            </span>
+            <h1 class="heading-header heading-main">
+                REJESTRACJA NA COACHA
+            </h1>
+            <a href="#info-text" class="continue-button-header continue-button-main">
+                zapisz się
+                <span class="btn-bg"></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="info-section">
+        <a href="#info-text" class="info-section__arrow-container arrow-container-main">
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+        </a>
+
+        <div id="info-text" class="info-section__decoration-text-container decoration-text-container-main">
+            <span class="decoration-text-main">
+                SQUAD
+            </span>
+            <br>
+        </div>
+
+        <div class="info-section__content-container">
+            <div class="text-wrapper">
+                <h2 class="info-heading">
+                    <span class="color-change">Z</span>ostań
+                    <br>
+                    <span class="color-change">c</span>zęścią
+                    <br>
+                    <span class="color-change">a</span>kademii
+                </h2>
+                <h3 class="info-subheading">
+                    ZŁÓŻ PODANIE <br> DO AKADEMI
+                </h3>
+                <p class="info-paragraph">
+                    Dołącz do nas i zostań naszym coachem!
+                     Dziel się zdobytą przez Ciebie wiedzą
+                      z graczami i zyskuj nowych podopiecznych!
+                       Zostań naszym specjalistą i twórz treści
+                        edukacyjne dla użytkowników! To właśnie
+                         na Ciebie czekamy!
+                </p>
+
+                <span class="question-text">
+                    Masz jakieś pytania?
+                </span> <br>
+                <a class="contact-button" href="../contact.html">
+                    Skontaktuj się z nami
+                </a>
+            </div>
+
+            <div class="form-wrapper">
+                <form class="contact-form" action="https://formsubmit.co/bartekmachu@gmail.com" method="POST">
+
+                    <!-- specification to email -->
+                    <input type="hidden" name="_subject" value="Rejestracja na coacha">
+
+                    <!-- ---------------------- -->
+
+                    <div class="form-item-wrapper form-discord-age-wrapper">
+
+                        <div class="input-wrapper">
+                            <span class="form-heading">Discord</span>
+                            <input class="form-input-item form-input-discord" type="text" name="discord" placeholder="Nazwa#0000">
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <span class="form-heading">Wiek</span>
+                            <input class="form-input-item form-input-age" type="number" name="wiek" min="10" max="50" placeholder="Wiek">
+                        </div>    
+                    
+                    </div>
+
+                    <div class="form-item-wrapper form-position-wrapper">
+                        <span class="form-heading">Preferowana pozycja</span>
+                        <h3 class="warning-text">
+                            UWAGA! Podaj role main i podstawowe
+                        </h3>
+                        <input class="form-input-item" type="text" name="rola" required placeholder="Pozycje">
+                    </div>
+
+                    <div class="form-item-wrapper form-team-division-wrapper">
+
+                        <div class="input-wrapper">
+                            <span class="form-heading">Team coach</span>
+                            <input class="form-input-item form-input-team-coach" list="team-coach" type="text" name="team-coach" required placeholder="Wybierz">
+                            <datalist id="team-coach">
+                                <option value="Tak">
+                                <option value="Nie">
+                              </datalist>
+                        
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <span class="form-heading">Dywizja</span>
+                            <input class="form-input-item form-input-division" type="text" name="dywizja" placeholder="Skrót np. P3, D2">
+                        </div>    
+
+                    </div>
+
+                    <div class="form-item-wrapper form-email-wrapper">
+                        <span class="form-heading">E-mail</span>
+                        <input class="form-input-item" type="email" name="e-mail" required placeholder="E-mail">
+                    </div>
+
+                    <div class="form-item-wrapper form-text-wrapper">
+                        <span class="form-heading">Opisz siebie</span>
+                        <h3 class="warning-text">
+                            UWAGA! Opisz siebie i sposób coachingu
+                        </h3>
+                        <textarea class="form-input-item form-textarea" name="message" required placeholder="Opisz siebie..."></textarea>
+                    </div>
+
+                    <button class="form-button continue-button-main" type="submit">
+                        WYŚLIJ
+                        <span class="btn-bg"></span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="info-section__img-wrapper">
+            <img src="../../assets/imgs/register-img/zed.png" alt="zed-img" class="zed-img">
+        </div>
+
+    </main>
+
+    <footer class="footer-section">
+        <a href="#home" class="footer-section__arrow-container arrow-container-main">
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+            <div class="arrow-item"></div>
+        </a>
+        <a href="./home.html" class="footer-section__logo-wrapper">
+            <img src="../" alt="logo">
+        </a>
+
+        <div class="footer-section__social-wrapper">
+            <a href="https://www.facebook.com/groups/2090073284610773" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+            
+        </div>
+
+        <div class="footer-section__copyrights">
+            &copy; 2021 Lol Coaching Academy | stworzone przez 
+            <a target="_blank" href="http://machon.handysoft.pl/" class="author-link">
+                Maszon Studio
+            </a>  
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="https://kit.fontawesome.com/786fc2d0ee.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- index js file -->  
+    <script src="../../js/nav/nav-animation.js"></script>
+    <script src="../../js/animation-main/animation-main.js"></script>
+
+</body>
+</html>
