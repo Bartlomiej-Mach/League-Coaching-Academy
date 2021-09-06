@@ -583,11 +583,20 @@ a {
 }
 
 .info-section__content-container .form-wrapper::before {
-  width: 80%;
+  width: 1px;
   height: 90%;
   content: '';
-  border-left: 1px solid #ACACAC;
-  border-bottom: 1px solid #ACACAC;
+  background: #ACACAC;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.info-section__content-container .form-wrapper::after {
+  width: 80%;
+  height: 1px;
+  content: '';
+  background: #ACACAC;
   position: absolute;
   left: 10px;
   bottom: 10px;
