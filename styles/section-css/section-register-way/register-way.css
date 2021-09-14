@@ -329,22 +329,6 @@ a {
           transform: translateX(0px);
 }
 
-.line-section {
-  position: absolute;
-  width: 100%;
-  max-width: 1440px;
-  top: 0;
-}
-
-.line-section .line {
-  position: absolute;
-  z-index: 10;
-  left: 14%;
-  width: 1px;
-  top: 0;
-  background: #F2F2F2;
-}
-
 .footer-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,10 +447,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-}
-
-.line {
-  height: 2350px;
 }
 
 .info-section {
