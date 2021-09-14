@@ -310,6 +310,10 @@ a {
   font-size: 15px;
 }
 
+.navigation-section__nav-list-container .list-wrapper .list-item .warning-link {
+  color: gold;
+}
+
 .navigation-section__nav-list-container .list-wrapper .list-item::before {
   width: 100%;
   height: 1px;
