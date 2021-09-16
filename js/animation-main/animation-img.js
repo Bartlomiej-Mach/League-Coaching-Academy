@@ -12,7 +12,7 @@ movieContainer.style.backgroundPosition = `50% 0px`;
 // });
 
 gsap.to(movieContainer, {
-  backgroundPosition: `50% ${innerHeight / 2}px`,
+  backgroundPosition: `50% ${innerHeight / 3}px`,
   ease: "in",
   scrollTrigger: {
     trigger: movieContainer,

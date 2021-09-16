@@ -108,6 +108,15 @@
                                 color: $color2;
                             }
                         }
+                        .teacher-surename {
+                            display: inline-block;
+                            font-family: $font1;
+                            font-size: 20px;
+                            color: $color1;
+                            &::first-letter {
+                                color: $color2;
+                            }
+                        }
     
                     }
                 }

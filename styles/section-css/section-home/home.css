@@ -780,6 +780,17 @@ a {
   color: #1A1919;
 }
 
+.teacher-section__all-content-container .teacher-container-item__slider-wrapper .swiper .swiper-wrapper .swiper-slide .teacher-surename {
+  display: inline-block;
+  font-family: "Spartan", sans-serif;
+  font-size: 20px;
+  color: #F2F2F2;
+}
+
+.teacher-section__all-content-container .teacher-container-item__slider-wrapper .swiper .swiper-wrapper .swiper-slide .teacher-surename::first-letter {
+  color: #1A1919;
+}
+
 .teacher-section__all-content-container .teacher-container-item__slider-wrapper .swiper-pagination {
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
