@@ -279,6 +279,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: black;
+  padding-right: 20px;
 }
 
 .navigation-section__logo-container .logo-wrapper {
@@ -579,12 +580,16 @@ a {
 }
 
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper {
-  width: 225px;
-  margin: 25px 0 0 70px;
+  width: 330px;
+  margin: 25px 0 0 0;
 }
 
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper .tutorial-subheading {
   margin-bottom: 40px;
+}
+
+.tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper .tutorial-paragraph .paragraph-link {
+  color: #EC3939;
 }
 
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper .tutorial-button {
@@ -819,7 +824,7 @@ a {
 
 .teacher-section__all-content-container .teacher-container-item__content-container .teacher-paragraph {
   color: #F2F2F2;
-  width: 222px;
+  width: 330px;
   margin: 0 0 40px 0;
 }
 
@@ -855,7 +860,7 @@ a {
   width: 100%;
   max-width: 1152px;
   z-index: 2;
-  margin: 120px 0 0 20%;
+  margin: 120px 0 0 15%;
 }
 
 .contact-section__content-wrapper .contact-heading {
@@ -869,7 +874,7 @@ a {
 
 .contact-section__content-wrapper .contact-paragraph {
   margin-bottom: 40px;
-  width: 245px;
+  width: 330px;
 }
 
 .contact-section__content-wrapper .continue-button-contact {

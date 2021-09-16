@@ -6,7 +6,7 @@
     left: 0;
     @include center-between();
     background: rgba($color: #000, $alpha: 1);
-    
+    padding-right: 20px;
     &__logo-container {
         .logo-wrapper {
             width: 60px;

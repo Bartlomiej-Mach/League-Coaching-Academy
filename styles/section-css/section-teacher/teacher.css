@@ -279,6 +279,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: black;
+  padding-right: 20px;
 }
 
 .navigation-section__logo-container .logo-wrapper {

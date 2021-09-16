@@ -15,10 +15,13 @@
         .tutorial-content-wrapper {
             display: flex;
             .tutorial-text-wrapper {
-                width: 225px;
-                margin: 25px 0 0 70px;
+                width: 330px;
+                margin: 25px 0 0 0;
                 .tutorial-subheading {
                     margin-bottom: 40px;
+                }
+                .tutorial-paragraph .paragraph-link{
+                    color: $color3;
                 }
                 .tutorial-button {
                     font-family: $font1;
