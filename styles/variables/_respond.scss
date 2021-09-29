@@ -14,6 +14,7 @@ $smaller-than-1550: 1550px;
 $smaller-than-1480: 1480px;
 $smaller-than-1350: 1350px;
 $smaller-than-1300: 1300px;
+$smaller-than-1215: 1215px;
 $smaller-than-1150: 1150px;
 $smaller-than-1050: 1050px;
 $smaller-than-960: 960px;
@@ -89,6 +90,12 @@ $height-900: 900px;
         @content;
     }
 }
+@mixin smaller-than-1215 {
+    @media (max-width: #{$smaller-than-1215}) {
+        @content;
+    }
+}
+
 @mixin smaller-than-1150 {
     @media (max-width: #{$smaller-than-1150}) {
         @content;

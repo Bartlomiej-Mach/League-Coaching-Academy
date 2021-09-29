@@ -1,13 +1,3 @@
-const line = document.querySelector('.line');
-
-//line animation
-gsap.from(line, {
-    height: 0,
-    duration: 4,
-    delay: 0.4,
-});
-
-
 // heading text welcome anim
 
 tl.to('.heading-main', {

@@ -518,6 +518,12 @@ a {
   padding-left: 15%;
 }
 
+@media (max-width: 1215px) {
+  .info-section__content-container {
+    padding: 0 40px;
+  }
+}
+
 .info-section__content-container .text-wrapper {
   position: relative;
 }
@@ -530,6 +536,12 @@ a {
   margin-top: 20px;
   width: 330px;
   position: relative;
+}
+
+@media (max-width: 1215px) {
+  .info-section__content-container .text-wrapper .info-paragraph {
+    width: 100%;
+  }
 }
 
 .info-section__content-container .text-wrapper .info-paragraph::before {
@@ -554,6 +566,12 @@ a {
   width: 100%;
 }
 
+@media (max-width: 1215px) {
+  .info-section__content-container .img-wrapper {
+    display: none;
+  }
+}
+
 .tutorial-section {
   width: 100%;
   max-width: 1440px;
@@ -569,6 +587,15 @@ a {
   padding-top: 40px;
 }
 
+@media (max-width: 1215px) {
+  .tutorial-section__content-container {
+    width: 100%;
+    margin: 0;
+    padding: 40px 40px 0 40px;
+    border: none;
+  }
+}
+
 .tutorial-section__content-container .tutorial-heading {
   color: #F2F2F2;
 }
@@ -579,9 +606,33 @@ a {
   display: flex;
 }
 
+@media (max-width: 1215px) {
+  .tutorial-section__content-container .tutorial-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper {
   width: 330px;
   margin: 25px 0 0 0;
+}
+
+@media (max-width: 1215px) {
+  .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper {
+    width: 100%;
+  }
 }
 
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-text-wrapper .tutorial-subheading {
@@ -623,6 +674,15 @@ a {
           justify-content: center;
 }
 
+@media (max-width: 1215px) {
+  .tutorial-section__content-container .tutorial-content-wrapper .tutorial-video-wrapper {
+    margin: 40px 0;
+    width: 70%;
+    height: 100%;
+    position: relative;
+  }
+}
+
 .tutorial-section__content-container .tutorial-content-wrapper .tutorial-video-wrapper .video-tutorial {
   width: 100%;
 }
@@ -645,6 +705,12 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+}
+
+@media (max-width: 1215px) {
+  .teacher-section {
+    margin-top: 50px;
+  }
 }
 
 .teacher-section::before {
@@ -673,12 +739,37 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 1215px) {
+  .teacher-section__all-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
 .teacher-section__all-content-container .teacher-container-item__slider-wrapper {
   position: relative;
   max-width: 550px;
   width: 100%;
   height: 100%;
   margin: 0 100px 0 15%;
+}
+
+@media (max-width: 1215px) {
+  .teacher-section__all-content-container .teacher-container-item__slider-wrapper {
+    margin: 40px;
+  }
 }
 
 .teacher-section__all-content-container .teacher-container-item__slider-wrapper::before {
@@ -821,6 +912,12 @@ a {
   margin: 40px 10% 40px 0;
 }
 
+@media (max-width: 1215px) {
+  .teacher-section__all-content-container .teacher-container-item__content-container {
+    margin: 40px;
+  }
+}
+
 .teacher-section__all-content-container .teacher-container-item__content-container .teacher-heading {
   color: #F2F2F2;
 }
@@ -837,6 +934,12 @@ a {
   color: #F2F2F2;
   width: 330px;
   margin: 0 0 40px 0;
+}
+
+@media (max-width: 1215px) {
+  .teacher-section__all-content-container .teacher-container-item__content-container .teacher-paragraph {
+    width: 100%;
+  }
 }
 
 .teacher-section__all-content-container .teacher-container-item__content-container .continue-button-main {
@@ -872,6 +975,12 @@ a {
   max-width: 1152px;
   z-index: 2;
   margin: 120px 0 0 15%;
+}
+
+@media (max-width: 1215px) {
+  .contact-section__content-wrapper {
+    margin: 40px;
+  }
 }
 
 .contact-section__content-wrapper .contact-heading {

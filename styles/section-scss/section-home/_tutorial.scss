@@ -9,14 +9,26 @@
         width: 90%;
         border-top: 1px solid $color5;
         padding-top: 40px;
+        @include smaller-than-1215 {
+            width: 100%;
+            margin: 0;
+            padding: 40px 40px 0 40px;
+            border: none;
+        }
         .tutorial-heading {
             color: $color1;
         }
         .tutorial-content-wrapper {
             display: flex;
+            @include smaller-than-1215 {
+                @include center-column();
+            }
             .tutorial-text-wrapper {
                 width: 330px;
                 margin: 25px 0 0 0;
+                @include smaller-than-1215 {
+                    width: 100%;
+                }
                 .tutorial-subheading {
                     margin-bottom: 40px;
                 }
@@ -43,6 +55,12 @@
                 width: 600px;
                 height: 330px;
                 @include center();
+                @include smaller-than-1215 {
+                    margin: 40px 0;
+                    width: 70%;
+                    height: 100%;
+                    position: relative;
+                }
                 .video-tutorial {
                     width: 100%;
                 }

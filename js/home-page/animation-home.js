@@ -23,18 +23,6 @@ gsap.from('.tutorial-text-wrapper',{
         y: 100,
 });
 
-// parallax video
-gsap.to(".tutorial-video-wrapper", {
-    yPercent: 30,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".tutorial-video-wrapper",
-      // start: "top bottom", 
-      // end: "bottom top",
-      scrub: true
-    }, 
-});
-
 
 // teacher text
 

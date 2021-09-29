@@ -12,6 +12,9 @@
         max-width: 1152px;
         z-index: 2;
         margin: 120px 0 0 15%;
+        @include smaller-than-1215 {
+            margin: 40px;       
+        }
         .contact-heading {
             color: $color1;
             margin-bottom: 25px;

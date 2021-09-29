@@ -557,6 +557,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+  padding: 0 15px;
 }
 
 .table-section .table-container {

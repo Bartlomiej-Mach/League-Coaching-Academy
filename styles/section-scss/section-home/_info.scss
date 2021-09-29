@@ -4,6 +4,8 @@
     position: relative;
     overflow: hidden;
     max-width: 1440px;
+    @include smaller-than-1215 {
+    }
     &__arrow-container {
         @include center-column();
         position: absolute;
@@ -16,6 +18,9 @@
         width: 100%;
         z-index: 1;
         padding-left: 15%;
+        @include smaller-than-1215 {
+            padding: 0 40px;
+        }
         .text-wrapper {
             .info-heading {
                 color: $color3;
@@ -25,6 +30,9 @@
                 margin-top: 20px;
                 width: 330px;
                 position: relative;
+                @include smaller-than-1215 {
+                    width: 100%;
+                }
                 &::before {
                     content: '';
                     background: $color3;
@@ -44,6 +52,9 @@
             width: 65%;
             .info-img {
                 width: 100%;
+            }
+            @include smaller-than-1215 {
+                display: none;
             }
         }
     }
