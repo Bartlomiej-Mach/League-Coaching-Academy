@@ -13,6 +13,7 @@ tl.from('.navigation-section__nav-list-container', {
 
 const navList = document.querySelector('.navigation-section__nav-list-container');
 const navBtn = document.querySelector('.navigation-section__button-container');
+const navLink = document.querySelectorAll('.list-link');
 
 const openCloseNav = () => {
     navList.classList.toggle('nav-list--active');
@@ -20,3 +21,7 @@ const openCloseNav = () => {
 }
 
 navBtn.addEventListener('click', openCloseNav);
+navLink.forEach(element => {
+    element.addEventListener('click', openCloseNav);
+});
+
