@@ -2,10 +2,19 @@
     width: 100%;
     @include center-column();
     max-width: 1440px;
+    @include smaller-than-1215 {
+        padding: 0 40px;
+    }
+    @include smaller-than-960 {
+        padding: 0 20px;
+    }
     &__floor-container {
         width: 65%;
         @include center-left();
         margin-bottom: 60px;
+        @include smaller-than-1215 {
+            width: 100%;
+        }
         &:first-child {
             border-top: 1px solid $color1;
             padding-top: 40px;
@@ -14,6 +23,9 @@
             @include center-left-column();
             color: $color1;
             margin-right: 130px;
+            @include smaller-than-960 {
+                margin-bottom: 60px;
+            }
             .division-heading {
                 font-family: $font2;
                 font-size: 50px;
@@ -48,6 +60,9 @@
         .about-wrapper {
             width: 645px;
             @include center-left-column();
+            @include smaller-than-1215 {
+                width: 100%;
+            }
             .about-heading {
                 color: $color1;
                 font-family: $font2;
@@ -58,6 +73,9 @@
         .coaching-wrapper {
             width: 645px;
             @include center-left-column();
+            @include smaller-than-1215 {
+                width: 100%;
+            }
             .coaching-heading {
                 color: $color1;
                 font-family: $font2;
@@ -66,5 +84,10 @@
             }
         }
 
+    }
+    &__floor-one {
+        @include smaller-than-960 {
+            @include center-left-column();
+        }
     }
 }

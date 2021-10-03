@@ -1,8 +1,15 @@
+let slides = 3;
+if(matchMedia("(max-width: 960px)").matches) {
+    slides = 2;
+} 
+if (matchMedia("(max-width: 500px)").matches) {
+    slides = 1;
+}
+
 
 // name slider on home section
-
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: slides,
     spaceBetween: 30,
     grabCursor: true,
     autoplay: {

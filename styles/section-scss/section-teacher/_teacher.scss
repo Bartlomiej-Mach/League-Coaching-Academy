@@ -36,11 +36,17 @@
                         font-size: 20px;
                         margin-right: 10px;
                         transform: translateY(4px);
+                        @include smaller-than-1050 {
+                            font-size: 15px;
+                        }
                     }
                     .teacher-name {
                         font-family: $font2;
                         font-size: 40px;
                         text-transform: uppercase;
+                        @include smaller-than-1050 {
+                            font-size: 30px;
+                        }
                     }
                 }
             }

@@ -24,14 +24,24 @@
         position: relative;
         @include center-between();
         overflow: hidden;
-
+        @include smaller-than-1215 {
+            @include center-left-column();
+            padding: 0 40px;
+            flex-direction: column-reverse;
+        }
+        @include smaller-than-960 {
+            padding: 0 20px;
+        }
         .opinion-container-item__slider-wrapper {
             position: relative;
             max-width: 600px;
             width: 100%;
-            
             padding: 20px 0;
             margin: 0 100px 0 15%;
+            @include smaller-than-1215 {
+                margin: 0;
+                max-width: 100%;
+            }
             .swiper2 {
                 width: 100%;
                 height: 500px;
@@ -49,6 +59,9 @@
                             font-family: $font2;
                             font-size: 50px;
                             color: $color2;
+                            @include smaller-than-960 {
+                                font-size: 40px;
+                            }
                         }
                         .opinion-subheading {
                             color: $color2;
@@ -56,6 +69,9 @@
                         }
                         .opinion-paragraph {
                             color: $color2;
+                            @include smaller-than-960 {
+                                font-size: 15px;
+                            }
                         }
 
 
@@ -76,6 +92,9 @@
                 color: $color1;
                 width: 250px;
                 margin: 0 0 40px 0;
+                @include smaller-than-1215 {
+                    width: 100%;
+                }
             }
             .continue-button-main {
                 color: $color2;

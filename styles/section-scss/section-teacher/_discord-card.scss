@@ -16,9 +16,17 @@
         position: relative;
         overflow: hidden;
         border-radius: 25px;
+        @include smaller-than-960 {
+            width: 90%;
+            padding: 0 20px;
+        }
         .discord-card-text-wrapper {
             position: absolute;
             right: 50px;
+            @include smaller-than-960 {
+                position: relative;
+                right: 0;
+            }
             .discord-card-heading {
                 font-family: $font2;
                 font-size: 50px;
@@ -76,7 +84,9 @@
             transform: rotate(17deg);
             bottom: -2%;
             left: -5%;
-            
+            @include smaller-than-960 {
+                display: none;
+            }
         }
     }
 }

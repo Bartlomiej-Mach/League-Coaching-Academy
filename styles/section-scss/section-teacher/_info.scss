@@ -16,6 +16,12 @@
         width: 100%;
         z-index: 1;
         padding-left: 15%;
+        @include smaller-than-1215 {
+            padding: 0 40px;
+        }
+        @include smaller-than-960 {
+            padding: 0 20px;
+        }
         .text-wrapper {
             position: relative;
             .info-heading {
