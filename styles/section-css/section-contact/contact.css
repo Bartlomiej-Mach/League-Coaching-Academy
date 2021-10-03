@@ -949,6 +949,12 @@ a {
   display: inline-block;
 }
 
+@media (max-width: 960px) {
+  .questions-section .questions-section__content-container .question-heading {
+    line-height: 50px;
+  }
+}
+
 .questions-section .questions-section__content-container .question-list {
   width: 100%;
 }

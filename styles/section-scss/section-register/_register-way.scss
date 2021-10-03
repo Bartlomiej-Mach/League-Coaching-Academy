@@ -3,6 +3,7 @@
     @include center();
     position: relative;
     max-width: 1440px;
+    overflow: hidden;
     &__arrow-container {
         @include center-column();
         position: absolute;
@@ -67,6 +68,10 @@
             min-width: 500px;
             @include center-column();
             position: relative;
+            @include smaller-than-960 {
+                width: 100%;
+                min-width: 100%;
+            }
             .choice-class-box {
                 width: 100%;
                 height: 500px;
@@ -78,6 +83,9 @@
                 background-color: rgba($color: $color2, $alpha: 0.3);
                 background-blend-mode: multiply;
                 position: relative;
+                @include smaller-than-960 {
+                    height: 300px;
+                }
                 &::before,
                 &::after {
                     content: '';

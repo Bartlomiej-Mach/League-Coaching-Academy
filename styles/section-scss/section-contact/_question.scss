@@ -23,6 +23,9 @@
             color: $color1;
             margin-bottom: 30px;
             display: inline-block;
+            @include smaller-than-960 {
+                line-height: 50px;
+            }
         }
         .question-list {
             width: 100%;
