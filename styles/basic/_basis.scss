@@ -35,6 +35,10 @@ h2 {
     font-size: 100px;
     font-size: bold;
     line-height: 100px;
+    @include smaller-than-960 {
+      font-size: 50px;
+      line-height: 50px;
+    }
 }
 
 h3 {
@@ -48,7 +52,17 @@ p {
   font-family: $font1;
   font-size: 20px;
   font-weight: normal;
+  @include smaller-than-960 {
+    font-size: 18px;
+  } 
 }
+
+.info-paragraph {
+    @include smaller-than-960 {
+        font-size: 18px;
+    }
+}
+
 
 li {
   list-style: none;

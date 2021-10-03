@@ -11,24 +11,95 @@
         .logo-wrapper {
             width: 60px;
             height: 60px;
-            background: $color3;
             margin: 20px;
+            img {
+                height: 100%;
+            }
         }
     }
-
+    &__button-container {
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: none;
+        @include center();
+        display: none;
+        z-index: 10;
+        @include smaller-than-960 {
+            display: flex;
+        }
+        span {
+            width: 70%;
+            background-color: $color1;
+            display: inline-block;
+            height: 2px;
+            position: relative;
+            transition: .2s;
+            &::before,
+            &::after {
+                width: 100%;
+                background-color: $color1;
+                display: inline-block;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                content: '';
+                transition: .2s;
+            }
+            &::after {
+                bottom: -8px;
+            }
+            &::before {
+                top: -8px;
+            }
+        }
+    }
+    .nav-btn--active {
+        span {
+            background-color: transparent;
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 0;
+            }
+        }
+    }
     &__nav-list-container {
+        @include smaller-than-960 {
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            @include center();
+            top: 0;
+            background-color: #000;
+            transition: .3s;
+        }
         .list-wrapper {
             @include center-between();
+            @include smaller-than-960 {
+                @include center-left-column();
+            }
             .list-item {
                 margin-right: 30px;
                 position: relative;
                 overflow: hidden;
                 height: 100px;
                 @include center();
+                @include smaller-than-960 {
+                    height: 40px;
+                }
                 .list-link {
                     font-size: 15px;
                     height: 100%;
                     @include center();
+                    @include smaller-than-960 {
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
                 }
                 .warning-link {
                     color: gold;
@@ -49,5 +120,8 @@
                 }
             }
         }
+    }
+    .nav-list--active {
+        height: 100vh;
     }
 }
