@@ -322,14 +322,19 @@ a {
   padding-right: 20px;
 }
 
+.navigation-section__logo-container {
+  position: relative;
+}
+
 .navigation-section__logo-container .logo-wrapper {
   width: 60px;
   height: 60px;
   margin: 20px;
+  display: inline-block;
 }
 
 .navigation-section__logo-container .logo-wrapper img {
-  height: 100%;
+  height: 60px;
 }
 
 .navigation-section__button-container {
@@ -606,16 +611,6 @@ a {
   font-family: "Spartan", sans-serif;
 }
 
-.footer-section__copyrights .author-link {
-  color: #EC3939;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.footer-section__copyrights .author-link:hover {
-  color: #99892c;
-}
-
 .contact-link {
   color: #EC3939;
 }
@@ -708,6 +703,31 @@ a {
           justify-content: space-between;
 }
 
+@media (max-width: 1215px) {
+  .info-section__content-container {
+    padding: 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 960px) {
+  .info-section__content-container {
+    padding: 0 20px;
+  }
+}
+
 .info-section__content-container .text-wrapper {
   position: relative;
 }
@@ -726,6 +746,12 @@ a {
   position: relative;
 }
 
+@media (max-width: 1215px) {
+  .info-section__content-container .text-wrapper .info-paragraph {
+    width: 100%;
+  }
+}
+
 .info-section__content-container .text-wrapper .info-paragraph::before {
   content: '';
   background: #EC3939;
@@ -739,6 +765,13 @@ a {
 .info-section__content-container .social-media-wrapper {
   width: 530px;
   background: #F2F2F2;
+}
+
+@media (max-width: 1215px) {
+  .info-section__content-container .social-media-wrapper {
+    margin-top: 100px;
+    width: 100%;
+  }
 }
 
 .info-section__content-container .social-media-wrapper .social-media-container {
@@ -881,12 +914,31 @@ a {
   padding-left: 15%;
 }
 
+@media (max-width: 1215px) {
+  .questions-section {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .questions-section {
+    padding: 0 20px;
+  }
+}
+
 .questions-section .questions-section__content-container {
   width: 80%;
   border-top: 1px solid #ACACAC;
   border-bottom: 1px solid #ACACAC;
   padding: 40px 0 20px 20px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1215px) {
+  .questions-section .questions-section__content-container {
+    width: 100%;
+    padding: 40px 0 20px 0;
+  }
 }
 
 .questions-section .questions-section__content-container .question-heading {

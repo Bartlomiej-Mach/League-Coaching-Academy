@@ -4,8 +4,6 @@
     position: relative;
     overflow: hidden;
     max-width: 1440px;
-    @include smaller-than-1215 {
-    }
     &__arrow-container {
         @include center-column();
         position: absolute;

@@ -1,12 +1,22 @@
 .questions-section {
     width: 100%;
     padding-left: 15%;
+    @include smaller-than-1215 {
+        padding: 0 40px;
+    }
+    @include smaller-than-960 {
+        padding: 0 20px;
+    }
     .questions-section__content-container {
         width: 80%;
         border-top: 1px solid $color5;
         border-bottom: 1px solid $color5;
         padding: 40px 0 20px 20px;
         margin-bottom: 50px;
+        @include smaller-than-1215 {
+            width: 100%;
+            padding: 40px 0 20px 0;
+        }
         .question-heading {
             font-family: $font2;
             font-size: 50px;

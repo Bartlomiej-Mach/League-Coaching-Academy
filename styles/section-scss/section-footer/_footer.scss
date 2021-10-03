@@ -39,13 +39,5 @@
         text-align: center;
         font-size: 10px;
         font-family: $font1;
-        .author-link {
-            color: $color3;
-            transition: .2s;
-            &:hover {
-                color: rgb(153, 137, 44);
-            }   
-        }
-        
     }
 }

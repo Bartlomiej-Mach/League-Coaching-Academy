@@ -17,6 +17,13 @@
         z-index: 1;
         padding: 0 10% 0 15%;
         @include center-space();
+        @include smaller-than-1215 {
+            padding: 0 40px;
+            @include center-left-column();
+        }
+        @include smaller-than-960 {
+            padding: 0 20px;
+        }
         .text-wrapper {
             .info-heading {
                 color: $color3;
@@ -29,6 +36,9 @@
                 margin-top: 20px;
                 width: 330px;
                 position: relative;
+                @include smaller-than-1215 {
+                    width: 100%;
+                }
                 &::before {
                     content: '';
                     background: $color3;
@@ -43,6 +53,10 @@
         .social-media-wrapper {
             width: 530px;
             background: $color1;
+            @include smaller-than-1215 {
+                margin-top: 100px;
+                width: 100%;
+            }
             .social-media-container {
                 width: 100%;
                 position: relative;

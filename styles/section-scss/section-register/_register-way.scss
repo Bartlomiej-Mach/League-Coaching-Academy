@@ -17,6 +17,13 @@
         padding: 0 15% 0 15%;
         @include center-top-left-space();
         overflow: hidden;
+        @include smaller-than-1215 {
+            padding: 0 40px;
+            @include center-column();
+        }
+        @include smaller-than-960 {
+            padding: 0 20px;
+        }
         .text-wrapper {
             .info-heading {
                 color: $color3;
@@ -32,6 +39,9 @@
                 margin-top: 20px;
                 width: 330px;
                 position: relative;
+                @include smaller-than-1215 {
+                    width: 100%;
+                }
             }
             .question-text {
                 font-family: $font1;

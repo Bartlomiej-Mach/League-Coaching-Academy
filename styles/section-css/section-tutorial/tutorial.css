@@ -322,14 +322,19 @@ a {
   padding-right: 20px;
 }
 
+.navigation-section__logo-container {
+  position: relative;
+}
+
 .navigation-section__logo-container .logo-wrapper {
   width: 60px;
   height: 60px;
   margin: 20px;
+  display: inline-block;
 }
 
 .navigation-section__logo-container .logo-wrapper img {
-  height: 100%;
+  height: 60px;
 }
 
 .navigation-section__button-container {
@@ -606,16 +611,6 @@ a {
   font-family: "Spartan", sans-serif;
 }
 
-.footer-section__copyrights .author-link {
-  color: #EC3939;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.footer-section__copyrights .author-link:hover {
-  color: #99892c;
-}
-
 .home-link {
   color: #F2F2F2;
 }
@@ -683,6 +678,12 @@ a {
   z-index: 11;
 }
 
+@media (max-width: 960px) {
+  .role-section__content-container {
+    padding: 0 20px;
+  }
+}
+
 .role-section__content-container .roles-floor {
   width: 100%;
   display: -webkit-box;
@@ -697,9 +698,35 @@ a {
   margin: 50px 0 0 0;
 }
 
+@media (max-width: 960px) {
+  .role-section__content-container .roles-floor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
 .role-section__content-container .roles-floor .jungle-lane {
   -webkit-clip-path: polygon(93% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(93% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+@media (max-width: 960px) {
+  .role-section__content-container .roles-floor .jungle-lane {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .role-section__content-container .roles-floor .role-wrapper {
@@ -718,6 +745,13 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .role-section__content-container .roles-floor .role-wrapper {
+    margin: 10px 0;
+    width: 100%;
+  }
 }
 
 .role-section__content-container .roles-floor .role-wrapper::before {
