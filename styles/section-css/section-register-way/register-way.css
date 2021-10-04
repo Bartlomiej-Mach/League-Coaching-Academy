@@ -842,6 +842,12 @@ a {
   transition: .2s;
 }
 
+@media (max-width: 960px) {
+  .info-section__content-container .class-choice-wrapper .choice-class-box::before, .info-section__content-container .class-choice-wrapper .choice-class-box::after {
+    display: none;
+  }
+}
+
 .info-section__content-container .class-choice-wrapper .choice-class-box::after {
   -webkit-animation: rotate-45-360 60s linear infinite;
           animation: rotate-45-360 60s linear infinite;

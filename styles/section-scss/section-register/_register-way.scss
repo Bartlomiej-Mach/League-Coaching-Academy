@@ -95,6 +95,9 @@
                     position: absolute;
                     opacity: 0;
                     transition: .2s;
+                    @include smaller-than-960 {
+                        display: none;
+                    }
                 }
                 &::after {
                     animation: rotate-45-360 60s linear infinite;
