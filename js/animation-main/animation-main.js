@@ -72,4 +72,6 @@ gsap.from('.text-wrapper',{
 });
 
 
+// video play 
 
+document.querySelector('.video-main--item').play();
