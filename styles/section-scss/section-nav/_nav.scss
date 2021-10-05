@@ -116,6 +116,9 @@
                     background: $color1;
                     content: '';
                     transition: .1s;
+                    @include smaller-than-960 {
+                        bottom: 7px;
+                    }
                 }
                 &:hover::before {
                     transform: translateX(0px);

@@ -522,6 +522,12 @@ a {
   transition: .1s;
 }
 
+@media (max-width: 960px) {
+  .navigation-section__nav-list-container .list-wrapper .list-item::before {
+    bottom: 7px;
+  }
+}
+
 .navigation-section__nav-list-container .list-wrapper .list-item:hover::before {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
