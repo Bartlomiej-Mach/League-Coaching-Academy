@@ -77,14 +77,14 @@ a {
 
 
 
-// body::-webkit-scrollbar {
-//     width: 5px;
-//     background: #000;
-//   }
-// body::-webkit-scrollbar-thumb {
-//     background: #fff;
+body::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+  }
+body::-webkit-scrollbar-thumb {
+    background: $color3;
     
-// }
+}
 
 
 @keyframes shine {

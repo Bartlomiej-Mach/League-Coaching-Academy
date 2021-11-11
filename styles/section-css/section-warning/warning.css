@@ -90,6 +90,15 @@ a {
   color: #F2F2F2;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #EC3939;
+}
+
 @-webkit-keyframes shine {
   0% {
     background-position-x: -300%;
